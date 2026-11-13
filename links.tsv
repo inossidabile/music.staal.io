@@ -1,0 +1,12 @@
+# One link per line: path <TAB> label <TAB> target URL
+# After editing, run:  python3 build.py   then commit and push.
+soundcloud	SoundCloud	https://soundcloud.com/boris-staal-official
+spotify	Spotify	https://open.spotify.com/artist/6PEz9UZY7xx5MPFLOcva9e
+apple	Apple Music	https://geo.music.apple.com/us/artist/boris-staal/1185774605
+amazon	Amazon Music	https://music.amazon.com/artists/B0BCZRVZ5R/boris-staal
+youtube	YouTube	https://www.youtube.com/@BorisStaalOfficial
+bandcamp	Bandcamp	https://boris-staal.bandcamp.com
+deezer	Deezer	https://www.deezer.com/artist/11566193
+tidal	Tidal	https://tidal.com/artist/9309074
+instagram	Instagram	https://www.instagram.com/boris.staal.official/
+facebook	Facebook	https://www.facebook.com/boris.staal.official
