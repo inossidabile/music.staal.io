@@ -97,8 +97,11 @@ LINKS_PAGE = """<!doctype html>
 * {{ box-sizing: border-box; }}
 body {{ margin: 0; background: #0e0e0e; color: #e6e6e6;
        font: 16px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; }}
-main {{ max-width: 26rem; margin: 0 auto; padding: 3rem 1.25rem 4rem; text-align: center; }}
-img {{ width: 8rem; height: 8rem; border-radius: 50%; display: block; margin: 0 auto 1.25rem; }}
+header {{ background: #000; }}
+img.banner {{ display: block; width: 100%; height: auto; }}
+@media (min-width: 800px) {{ img.banner {{ height: 14rem; object-fit: cover; object-position: right center; }} }}
+main {{ max-width: 26rem; margin: 0 auto; padding: 2rem 1.25rem 4rem; text-align: center; }}
+img.avatar {{ width: 8rem; height: 8rem; border-radius: 50%; display: block; margin: 0 auto 1.25rem; }}
 h1 {{ font-size: 1.6rem; margin: 0 0 .5rem; letter-spacing: .02em; }}
 p {{ margin: 0 0 2rem; color: #a8a8a8; }}
 ul {{ list-style: none; margin: 0; padding: 0; }}
@@ -109,8 +112,9 @@ a:hover, a:focus {{ border-color: #f5b300; color: #f5b300; outline: none; }}
 </style>
 </head>
 <body>
+<header><img class="banner" src="/banner.jpg" alt="Vsratosphere" width="1860" height="390"></header>
 <main>
-<img src="/avatar.jpg" alt="{artist}" width="128" height="128">
+<img class="avatar" src="/avatar.jpg" alt="{artist}" width="128" height="128">
 <h1>{artist}</h1>
 <p>{bio}</p>
 <ul>
