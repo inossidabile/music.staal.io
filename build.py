@@ -20,8 +20,9 @@ import shutil
 SITE = "https://music.staal.io"
 ARTIST = "Boris Staal"
 BIO = (
-    "Home of Vsratosphere. Random stuff put to rhythm and glitch that talks back "
-    "and won\u2019t behave. Lorem ipsum dolor sit amet. Stop reading this lol. \U0001F9A6"
+    "Glitchy breaks, electro and Melbourne bounce from CDMX. Home of Vsratosphere: "
+    "random stuff put to rhythm and glitch that talks back and won\u2019t behave. "
+    "Lorem ipsum dolor sit amet. You can press play now. \U0001F9A6"
 )
 # What music.staal.io itself does: a path from links.tsv forwards there;
 # None shows a page listing every link.
