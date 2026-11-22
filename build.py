@@ -115,7 +115,7 @@ a:hover, a:focus {{ border-color: #f5b300; color: #f5b300; outline: none; }}
 </style>
 </head>
 <body>
-<header class="banner"><img class="banner-bg" src="/banner-bg.jpg" alt="Vsratosphere" width="1860" height="390"><img class="banner-dog" src="/banner-dog.png" alt="" width="282" height="520"></header>
+<header class="banner"><img class="banner-bg" src="/banner-bg.jpg" alt="Vsratosphere" width="1860" height="210"><img class="banner-dog" src="/banner-dog.png" alt="" width="282" height="280"></header>
 <main>
 <img class="avatar" src="/avatar.jpg" alt="{artist}" width="128" height="128">
 <h1>{artist}</h1>
