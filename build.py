@@ -98,8 +98,11 @@ LINKS_PAGE = """<!doctype html>
 body {{ margin: 0; background: #0e0e0e; color: #e6e6e6;
        font: 16px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; }}
 header {{ background: #000; }}
-img.banner {{ display: block; width: 100%; height: auto; }}
-@media (min-width: 800px) {{ img.banner {{ height: 14rem; object-fit: cover; object-position: right center; }} }}
+.banner {{ position: relative; }}
+.banner-bg {{ display: block; width: 100%; max-width: 1400px; height: auto; margin: 0 auto;
+             -webkit-mask-image: linear-gradient(to right, #000 85%, transparent);
+             mask-image: linear-gradient(to right, #000 85%, transparent); }}
+.banner-dog {{ position: absolute; top: 0; right: 0; height: 100%; width: auto; }}
 main {{ max-width: 26rem; margin: 0 auto; padding: 2rem 1.25rem 4rem; text-align: center; }}
 img.avatar {{ width: 8rem; height: 8rem; border-radius: 50%; display: block; margin: 0 auto 1.25rem; }}
 h1 {{ font-size: 1.6rem; margin: 0 0 .5rem; letter-spacing: .02em; }}
@@ -112,7 +115,7 @@ a:hover, a:focus {{ border-color: #f5b300; color: #f5b300; outline: none; }}
 </style>
 </head>
 <body>
-<header><img class="banner" src="/banner.jpg" alt="Vsratosphere" width="1860" height="390"></header>
+<header class="banner"><img class="banner-bg" src="/banner-bg.jpg" alt="Vsratosphere" width="1860" height="390"><img class="banner-dog" src="/banner-dog.png" alt="" width="282" height="520"></header>
 <main>
 <img class="avatar" src="/avatar.jpg" alt="{artist}" width="128" height="128">
 <h1>{artist}</h1>
