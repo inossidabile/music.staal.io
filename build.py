@@ -152,8 +152,11 @@ p {{ margin: 0 auto 2rem; max-width: 30rem; color: #a8a8a8; }}
 ul {{ list-style: none; margin: 0 auto; padding: 0; max-width: 26rem;
      display: grid; grid-template-columns: 1fr; gap: .75rem; }}
 li {{ margin: 0; }}
-@media (min-width: 560px) {{ ul {{ max-width: 36rem; grid-template-columns: repeat(2, 1fr); }} }}
-@media (min-width: 1000px) {{ ul {{ max-width: none; grid-template-columns: repeat(5, 1fr); }} }}
+@media (min-width: 560px) {{
+  ul {{ max-width: 40rem; grid-template-columns: repeat(2, 1fr); gap: 1rem; }}
+  ul a {{ padding: 1.35rem 1.25rem; font-size: 1.1rem; }}
+  ul a svg {{ width: 24px; height: 24px; }}
+}}
 a {{ display: flex; align-items: center; justify-content: center; gap: .6rem; padding: .85rem 1rem; border: 1px solid #333; border-radius: .6rem;
      background: #171717; color: #e6e6e6; text-decoration: none; font-weight: 600; }}
 a svg {{ flex: none; }}
