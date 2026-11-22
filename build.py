@@ -138,9 +138,17 @@ header {{ background: #000; }}
              mask-image: linear-gradient(to right, #000 85%, transparent); }}
 .banner-dog {{ position: absolute; top: 0; right: 0; height: 100%; width: auto; }}
 main {{ max-width: 62rem; margin: 0 auto; padding: 2rem 1.25rem 4rem; text-align: center; }}
-img.avatar {{ width: 8rem; height: 8rem; border-radius: 50%; display: block; margin: 0 auto 1.25rem; }}
+img.avatar {{ width: 11rem; height: 11rem; border-radius: 50%; display: block; margin: 0 auto 1.25rem; }}
 h1 {{ font-size: 1.6rem; margin: 0 0 .5rem; letter-spacing: .02em; }}
 p {{ margin: 0 auto 2rem; max-width: 30rem; color: #a8a8a8; }}
+.hero {{ margin-bottom: 2rem; }}
+.hero p {{ margin-bottom: 0; }}
+@media (min-width: 700px) {{
+  .hero {{ display: flex; align-items: center; justify-content: center; gap: 2.5rem;
+          max-width: 44rem; margin: 0 auto 2.5rem; text-align: left; }}
+  .hero img.avatar {{ width: 14rem; height: 14rem; margin: 0; flex: none; }}
+  .hero p {{ margin: 0; max-width: none; }}
+}}
 ul {{ list-style: none; margin: 0 auto; padding: 0; max-width: 26rem;
      display: grid; grid-template-columns: 1fr; gap: .75rem; }}
 li {{ margin: 0; }}
@@ -155,9 +163,13 @@ a:hover, a:focus {{ border-color: #f5b300; color: #f5b300; outline: none; }}
 <body>
 <header class="banner"><img class="banner-bg" src="/banner-bg.jpg" alt="Vsratosphere" width="1860" height="210"><img class="banner-dog" src="/banner-dog.png" alt="" width="282" height="280"></header>
 <main>
+<div class="hero">
 <img class="avatar" src="/avatar.jpg" alt="{artist}" width="128" height="128">
+<div class="intro">
 <h1>{artist}</h1>
 <p>{bio}</p>
+</div>
+</div>
 <ul>
 {items}
 </ul>
