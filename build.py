@@ -103,19 +103,22 @@ header {{ background: #000; }}
              -webkit-mask-image: linear-gradient(to right, #000 85%, transparent);
              mask-image: linear-gradient(to right, #000 85%, transparent); }}
 .banner-dog {{ position: absolute; top: 0; right: 0; height: 100%; width: auto; }}
-main {{ max-width: 26rem; margin: 0 auto; padding: 2rem 1.25rem 4rem; text-align: center; }}
+main {{ max-width: 62rem; margin: 0 auto; padding: 2rem 1.25rem 4rem; text-align: center; }}
 img.avatar {{ width: 8rem; height: 8rem; border-radius: 50%; display: block; margin: 0 auto 1.25rem; }}
 h1 {{ font-size: 1.6rem; margin: 0 0 .5rem; letter-spacing: .02em; }}
-p {{ margin: 0 0 2rem; color: #a8a8a8; }}
-ul {{ list-style: none; margin: 0; padding: 0; }}
-li {{ margin: 0 0 .75rem; }}
+p {{ margin: 0 auto 2rem; max-width: 30rem; color: #a8a8a8; }}
+ul {{ list-style: none; margin: 0 auto; padding: 0; max-width: 26rem;
+     display: grid; grid-template-columns: 1fr; gap: .75rem; }}
+li {{ margin: 0; }}
+@media (min-width: 560px) {{ ul {{ max-width: 36rem; grid-template-columns: repeat(2, 1fr); }} }}
+@media (min-width: 1000px) {{ ul {{ max-width: none; grid-template-columns: repeat(5, 1fr); }} }}
 a {{ display: block; padding: .85rem 1rem; border: 1px solid #333; border-radius: .6rem;
      background: #171717; color: #e6e6e6; text-decoration: none; font-weight: 600; }}
 a:hover, a:focus {{ border-color: #f5b300; color: #f5b300; outline: none; }}
 </style>
 </head>
 <body>
-<header class="banner"><img class="banner-bg" src="/banner-bg.jpg" alt="Vsratosphere" width="1860" height="390"><img class="banner-dog" src="/banner-dog.png" alt="" width="282" height="520"></header>
+<header class="banner"><img class="banner-bg" src="/banner-bg.jpg" alt="Vsratosphere" width="1860" height="210"><img class="banner-dog" src="/banner-dog.png" alt="" width="282" height="280"></header>
 <main>
 <img class="avatar" src="/avatar.jpg" alt="{artist}" width="128" height="128">
 <h1>{artist}</h1>
